@@ -1,0 +1,38 @@
+
+<h1>message works!</h1>
+<div class="container" style="display:-webkit-box;">
+    <div class="card-img-wrapper" *ngFor='let usr of users' >
+
+
+<img src="{{usr.photoUrl}}" alt="{{usr.knownAs}}" class="card-img-top">
+
+    <div class="card-body p1">
+
+      <h6 class="card-title text-center mb-1" (click)="FullData(usr.id)"><i class="fa fa-user mr-2"></i> 
+      {{usr.knownAs}}
+      
+      
+      </h6>
+    </div>
+    
+</div>
+
+  
+
+  <div class="container">
+
+
+
+   
+
+    <img src="{{id?.photoUrl}}" alt="{{id.knownAs}}" class="card-img-top"> 
+  
+    <h1>{{id.introduction}}</h1>
+
+  </div>
+
+
+
+
+
+  </div>
